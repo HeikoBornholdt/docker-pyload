@@ -54,6 +54,9 @@ WORKDIR /usr/share/pyload
 # set file_log to False (we use docker logging)
 COPY default.conf /default.conf
 
+# required for https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwje8vz3y8rSAhXpBcAKHYpYB74QFggcMAA&url=https%3A%2F%2Fitunes.apple.com%2Fde%2Fapp%2Fpyload-f%25C3%25BCr-ios%2Fid799697539%3Fmt%3D8&usg=AFQjCNGt7-SP6d96M8pAUbCfdtQx5E_nYQ&sig2=h6mgkHwnfv8ILPo00ve5Xg
+ADD PyLoadiOSPush.py /usr/share/pyload/module/plugins/hooks/
+
 # Webinterface
 EXPOSE 8000
 # API (https://github.com/pyload/pyload/wiki/How-to-access-the-API)
