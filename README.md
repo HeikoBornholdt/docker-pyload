@@ -13,7 +13,7 @@ docker run -it --rm -v $PWD/pyload:/etc/pyload wainox/docker-pyload pyLoadCore -
 
 You can run pyload now:
 `````
-docker run -it --rm -p 8000:8000 -v $PWD/pyload:/etc/pyload wainox/docker-pyload pyLoadCore
+docker run -it --rm -p 8000:8000 -v $PWD/pyload:/etc/pyload wainox/docker-pyload pyLoadCore --pidfile /dev/null
 `````
 
 ## Advanced
@@ -21,7 +21,7 @@ docker run -it --rm -p 8000:8000 -v $PWD/pyload:/etc/pyload wainox/docker-pyload
 ### Manage Users
 You can manage users via webinterface or this command:
 `````
-docker run -it --rm -v $PWD/pyload:/etc/pyload wainox/docker-pyload pyLoadCore --user
+docker run -it --rm -v $PWD/pyload:/etc/pyload wainox/docker-pyload pyLoadCore  --pidfile /dev/null --user
 `````
 
 ### Secure Webinterface
